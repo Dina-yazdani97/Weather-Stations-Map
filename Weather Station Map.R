@@ -40,7 +40,7 @@ ggplot() +
   # Add station density as points
   geom_sf(data = stations_robinson, color = "red3", size = 0.1, alpha = 0.7) +
   ggtitle("Weather Stations Map") + 
-  labs(caption = "Data Source: NCDC-NOAA") +  # اضافه کردن کپشن
+  labs(caption = "Data Source: NCDC-NOAA") + 
   theme_minimal() +
   theme(
     text = element_text(family = "Times New Roman", face = "bold"),
@@ -49,11 +49,12 @@ ggplot() +
     axis.text = element_blank(),
     axis.title = element_blank(),
     plot.background = element_rect(fill = "white", color = NA),
-    plot.caption = element_text(hjust = 0.5, size = 10, face = "bold"),  # استایل کپشن
+    plot.caption = element_text(hjust = 0.5, size = 10, face = "bold"), 
     panel.background = element_rect(fill = "white", color = NA)
   )
 
 # Save Map ----------------------------------------------------------------
 
 ggsave("Weather-Station-Map", width = 10, height = 6, dpi = 300, bg = "white")
+
 
