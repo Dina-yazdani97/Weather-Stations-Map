@@ -3,7 +3,7 @@ library(sf)
 library(rnaturalearth)
 library(ggplot2)
 library(extrafont)
-library(readxl)  # Add this for reading Excel files
+library(rio)
 
 # Download country boundaries and ocean data ------------------------------
 world_countries <- ne_countries(scale = 'medium', returnclass = 'sf')
@@ -19,7 +19,7 @@ world_oceans_robinson <- st_transform(world_oceans, crs = target_crs_robinson)
 
 # Load and prepare station data -------------------------------------------
 # Read your station data
-stations <- read_excel("F://Data//station.xlsx")
+stations <- import("F://Data//station.xlsx")
 
 # Convert to sf object and transform to Robinson projection
 stations_sf <- st_as_sf(stations, coords = c("LON", "LAT"), crs = 4326)
@@ -56,3 +56,4 @@ ggplot() +
 # Save Map ----------------------------------------------------------------
 
 ggsave("Weather-Station-Map", width = 10, height = 6, dpi = 300, bg = "white")
+
