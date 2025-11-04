@@ -19,7 +19,7 @@ world_oceans_robinson <- st_transform(world_oceans, crs = target_crs_robinson)
 
 # Load and prepare station data -------------------------------------------
 # Read your station data
-stations <- read_excel("F://shp//station.xlsx")
+stations <- read_excel("F://Data//station.xlsx")
 
 # Convert to sf object and transform to Robinson projection
 stations_sf <- st_as_sf(stations, coords = c("LON", "LAT"), crs = 4326)
@@ -39,7 +39,7 @@ ggplot() +
   geom_sf(data = world_countries_robinson, fill = "gray90", color = "black", linewidth = 0.1) +
   # Add station density as points
   geom_sf(data = stations_robinson, color = "red3", size = 0.1, alpha = 0.7) +
-  ggtitle("Weather Stations MAP") + 
+  ggtitle("Weather Stations Map") + 
   labs(caption = "Data Source: NCDC-NOAA") +  # اضافه کردن کپشن
   theme_minimal() +
   theme(
@@ -54,4 +54,5 @@ ggplot() +
   )
 
 # Save Map ----------------------------------------------------------------
-ggsave("robinson_map_with_stations.png", width = 10, height = 6, dpi = 300, bg = "white")
+
+ggsave("Weather-Station-Map", width = 10, height = 6, dpi = 300, bg = "white")
