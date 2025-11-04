@@ -8,5 +8,5 @@ This project uses the following R packages:
 library(ggplot2) – for data visualization
 library(sf) – for handling spatial data
 library(rnaturalearth) – for basemap data
-library(extrafont) - using several fonts
-library(readxl) -Reading Excel files
+library(extrafont) - using different fonts
+library(rio) -Reading Excel files
