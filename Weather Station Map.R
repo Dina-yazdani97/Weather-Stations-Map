@@ -57,4 +57,5 @@ ggplot() +
 
 ggsave("Weather-Station-Map", width = 10, height = 6, dpi = 300, bg = "white")
 
+#url <- "https://www1.ncdc.noaa.gov/pub/data/noaa/isd-history.csv
 
