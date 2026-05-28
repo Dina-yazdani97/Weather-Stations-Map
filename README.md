@@ -5,8 +5,8 @@ The project focuses on visualizing geographic data in a clear and aesthetically 
 🧰 Tools & Libraries\
 This project uses the following R packages:
 
-library(ggplot2) – for data visualization
-library(sf) – for handling spatial data
-library(rnaturalearth) – for basemap data
-library(extrafont) - using different fonts
+library(ggplot2) – for data visualization\
+library(sf) – for handling spatial data\
+library(rnaturalearth) – for basemap data\
+library(extrafont) - using different fonts\
 library(rio) -Reading Excel files
