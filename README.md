@@ -2,7 +2,7 @@
 This repository demonstrates how to create a global map for weather stations using the Robinson projection with using R programming language.
 The project focuses on visualizing geographic data in a clear and aesthetically pleasing way, ideal for climatology, meteorology, or geographic data visualization projects.
 
-🧰 Tools & Libraries
+🧰 Tools & Libraries\
 This project uses the following R packages:
 
 library(ggplot2) – for data visualization
