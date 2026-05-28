@@ -1,4 +1,4 @@
-🌍 Weather Stations Map using the Robinson Projection in R
+🌍 Weather Stations Map using the Robinson Projection in R\
 This repository demonstrates how to create a global map of weather stations using the Robinson projection with the R programming language.
 The project focuses on visualizing geographic data in a clear and aesthetically pleasing way, ideal for climatology, meteorology, or geographic data visualization projects.
 
